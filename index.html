@@ -71,32 +71,47 @@
 
             <form class="js-speaker-form">
              <div class="modal-form">
-              <label for="name">Ім'я</label>
-              <input type="text" name="name" id="name" > 
+              <label class="modal-text" for="name">Ім'я</label>
+              <input class="modal-type"  type="text" name="name" id="name" > 
+              <div class="modal-item">
+              <svg class="modal-svg">
+                <use href="./images/modal-symbol1.svg#icon-name"></use>
+              </svg>
+              </div>
              </div> 
             
              <div class="modal-form">
-              <label for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel">  
+              <label class="modal-text"  for="tel">Телефон</label>
+              <input class="modal-type" type="tel" name="tel" id="tel">  
+              <div class="modal-item">
+                <svg class="modal-svg">
+                  <use href="./images/modal-symbol1.svg#icon-phone"></use>
+                </svg>
+              </div>
              </div>
            
               <div class="modal-form">
-                <label for="mail">Почта</label>
-                <input type="email" name="mail" id="mail">  
+                <label class="modal-text"  for="mail">Почта</label>
+                <input class="modal-type"  type="email" name="mail" id="mail">  
+                <div class="modal-item">
+                  <svg class="modal-svg">
+                    <use href="./images/modal-symbol1.svg#icon-mail"></use>
+                  </svg>
+                </div>
               </div>
 
 
               <div class="modal-form">
-                <label for="comment">Коментар</label>
-                <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+                <label class="modal-text"  for="comment">Коментар</label>
+                <textarea class="comment-type"  name="comment" id="comment" placeholder="Введіть текст"></textarea>
               </div>
               <div>
   
                 <input type="checkbox" name="pilicy" id="policy">
-                <label for="policy">Погоджуюся з розсилкою та приймаю Умови договору</label>
+                <label class="modal-check"  for="policy">Погоджуюся з розсилкою та приймаю <a class="modal-link" href="#">Умови договору</a></label>
               </div>
 
-            <button type="submit">Відправити</button>
+            <button class="modal-btn-type" type="submit">Відправити</button>
           </form>
           </div>
 
