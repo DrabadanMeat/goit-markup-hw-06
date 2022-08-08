@@ -315,6 +315,7 @@ button {
 }
 /* <==================================Modal=================================> */
 .modal {
+  padding: 40px;
   width: 528px;
   height: 581px;
   background-color: var(--background-color);
@@ -356,12 +357,7 @@ button {
   transition-timing-function: var(--cubik);
 }
 
-.modal-container {
-  width: 448px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 40px;
-}
+
 .modal-header {
   font-style: normal;
   font-weight: 700;
@@ -427,22 +423,18 @@ textarea {
   padding-left: 20px;
 }
 .modal-btn-type {
-  margin-left: 115px;
+  display: block;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
   border: 0px;
+  margin: 0 auto;
+  padding: 10px 32px;
   margin-top: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 200px;
+  min-width: 200px;
   color: var(--background-color);
   background-color: var(--accent-color);
 
@@ -457,18 +449,13 @@ textarea {
 .modal-link {
   color: var(--accent-color);
 }
-.modal-item {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 18px;
-  width: 40px;
-  height: 40px;
-}
+
 .modal-svg {
-  width: 13px;
-  height: 13px;
+  position: absolute;
+  top: 30px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
   fill: var(--title-text-color);
 }
 .modal-type:focus + .modal-svg {
@@ -481,8 +468,8 @@ textarea {
   border: 1px solid var(--title-text-color);
   border-radius: 2px;
   content: '';
-  top: 440px;
-  left: 37px;
+  top: 450px;
+  left: 50px;
   width: 16px;
   height: 15px;
   cursor: pointer;
@@ -490,9 +477,22 @@ textarea {
 .modal-form-check:checked + .modal-check::before {
   background-image: url(../images/icon-check.svg);
   border-color: var(--accent-color);
+  border: none;
 }
 .modal-form-check:focus + .modal-check::before {
   outline: 2px solid var(--accent-color);
+}
+.modal-texterea{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+}
+.modal-checkbox{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 /* <==================================/Modal=================================> */
 /* <======================/HERO==========================> */
@@ -669,7 +669,7 @@ textarea {
   color: var(--accent-color);
 }
 .subscrip {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .subscrip-title {
   font-weight: 700;
@@ -699,6 +699,7 @@ textarea {
   color: var(--background-color);
 }
 .subscrip-btn {
+  position: relative;
   margin-left: 12px;
   font-family: inherit;
   font-weight: 700;
@@ -709,9 +710,7 @@ textarea {
   letter-spacing: 0.06em;
   border-radius: 4px;
   border: 0px;
-
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-right: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 200px;
@@ -735,6 +734,11 @@ textarea {
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.icon-subscribe{
+ position: absolute;
+ fill: currentColor;
+ right: 30px;
 }
 
 /* <======================/FOOTER==========================> */
