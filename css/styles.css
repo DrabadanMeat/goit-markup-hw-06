@@ -452,11 +452,14 @@ textarea {
 
 .modal-svg {
   position: absolute;
-  top: 30px;
+  top: 31px;
   left: 12px;
-  width: 18px;
-  height: 18px;
+  width: 13px;
+  height: 13px;
   fill: var(--title-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubik);
 }
 .modal-type:focus + .modal-svg {
   fill: var(--accent-color);
@@ -693,7 +696,6 @@ textarea {
   background-color: var(--background-hero);
   width: 358px;
   height: 50px;
-  margin-right: 10px;
   outline: none;
   padding-left: 16px;
   color: var(--background-color);
